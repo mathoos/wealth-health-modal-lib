@@ -18,4 +18,4 @@ function Modal({ show, handleClose, txt }){
     );
 };
 
-export default Modal;
+module.exports = Modal;
