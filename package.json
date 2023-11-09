@@ -1,0 +1,22 @@
+{
+  "name": "wealth-health-modal-lib",
+  "version": "1.0.0",
+  "description": "Modale réutilisable",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathoos/wealth-health-modal-lib.git"
+  },
+  "keywords": [
+    "modal"
+  ],
+  "author": "Mathilde Bret",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathoos/wealth-health-modal-lib/issues"
+  },
+  "homepage": "https://github.com/mathoos/wealth-health-modal-lib#readme"
+}
