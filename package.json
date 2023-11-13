@@ -1,6 +1,6 @@
 {
   "name": "wealth-health-modal-lib",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Modale réutilisable",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mathoos/wealth-health-modal-lib/issues"
   },
-  "homepage": "https://github.com/mathoos/wealth-health-modal-lib#readme"
+  "homepage": "https://github.com/mathoos/wealth-health-modal-lib#readme",
+  "dependencies": {
+    "create-react-library": "^3.1.1"
+  }
 }
