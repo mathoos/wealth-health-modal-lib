@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import styles from './index.css'
 
 const Modal = ({ show, handleClose, txt }) => {
   if (!show) {
@@ -7,10 +7,10 @@ const Modal = ({ show, handleClose, txt }) => {
   }
 
   return (
-    <div className='modal'>
-      <div className='modal_content'>
-        <div className='modal_content-close' onClick={handleClose} />
-        <div className='modal_content-txt'>
+    <div className={styles.modal}>
+      <div className={styles.modal_content}>
+        <div className={styles.close} onClick={handleClose} />
+        <div className={styles.txt}>
           <p>{txt}</p>
         </div>
       </div>
