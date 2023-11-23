@@ -3,10 +3,8 @@
 **Modale qui apparaît avec un texte personnalisé au click sur un bouton**
 
 [![NPM](https://img.shields.io/npm/v/wealth-health-modal-lib.svg)](https://www.npmjs.com/package/wealth-health-modal-lib) [!
-
-[JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 [![NODE](https://img.shields.io/badge/node-v.16.17.1-green)](https://nodejs.org/en)
+[JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) 
 
 
 ## Install
