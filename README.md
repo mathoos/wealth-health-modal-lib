@@ -1,6 +1,6 @@
 # wealth-health-modal-lib
 
-**Modale qui apparaît avec un texte personnalisé au click sur un bouton**
+> **Modale qui apparaît avec un texte personnalisé au click sur un bouton**
 
 [![NPM](https://img.shields.io/npm/v/wealth-health-modal-lib.svg)](https://www.npmjs.com/package/wealth-health-modal-lib)
 [![NODE](https://img.shields.io/badge/node-v.16.17.1-green)](https://nodejs.org/en)
@@ -60,4 +60,4 @@ function Component() {
 
 ## License
 
-MIT © [mathoos](https://github.com/mathoos)
+[mathoos](https://github.com/mathoos)
