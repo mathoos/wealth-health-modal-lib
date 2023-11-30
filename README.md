@@ -10,7 +10,7 @@
 
 ```bash
 npm i wealth-health-modal-lib
-npm link wealth-health-modal-lib
+npm link wealth-health-modal-lib // pour le dev
 ```
 
 ## Dependances
@@ -36,7 +36,7 @@ function Component() {
   // État local de la modale initialisé à false
   const [showModal, setShowModal] = useState(false);
 
-  const *functionToShowModal* = () => {
+  const functionToShowModal = () => {
     setShowModal(true); // On affiche la modale
   };
 
@@ -50,7 +50,7 @@ function Component() {
 
     // La modale avec les props
     <Modal
-      show={showModal} 
+      show={showModal} // donner précisions sur les props (obligatoire ou pas / booléen ...)
       handleClose={closeModal} 
       txt={<span>*Texte à générer*</span>} 
     />
