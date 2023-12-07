@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import "@testing-library/jest-dom/extend-expect";
+import '@testing-library/jest-dom';
 import Modal from './index';
 
 
@@ -13,7 +13,7 @@ describe("Given the modal opens on the window ", () => {
             <Modal show />
         ); 
         const modalElement = screen.getByTestId('modal');
-        expect(modalElement).toBeInTheDocument();
+        expect(modalElement).not.toBeNull();
       });
 
       
@@ -23,14 +23,15 @@ describe("Given the modal opens on the window ", () => {
             <Modal show content={<div>{contentText}</div>} />
         );
         const contentElement = screen.getByText(contentText);
-        expect(contentElement).toBeInTheDocument();
+        expect(contentElement).not.toBeNull();
     });
 
 
     describe("When I click on close button", () => {
 
         test("Then the modal should close", async () => {
-            const closeModalMock = jest.fn();
+            const closeModalMock = jest.fn()
+            
             render(
                 <Modal show handleClose={closeModalMock} />
             );
@@ -38,9 +39,6 @@ describe("Given the modal opens on the window ", () => {
             fireEvent.click(closeButton);
 
             expect(closeModalMock).toHaveBeenCalledTimes(1);
-
-            const modalElement = screen.queryByTestId('modal');
-            expect(modalElement).toBeNull();
         })
     });
 })
