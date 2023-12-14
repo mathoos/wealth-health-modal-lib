@@ -1,7 +1,7 @@
 {
   "name": "wealth-health-modal-lib",
-  "version": "1.0.0",
-  "description": "modal component",
+  "version": "1.0.8",
+  "description": "Modale qui apparaît avec un texte personnalisé au click sur un bouton",
   "author": "mathoos",
   "license": "MIT",
   "repository": "mathoos/wealth-health-modal-lib",

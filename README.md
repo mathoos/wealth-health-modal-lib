@@ -36,23 +36,24 @@ function Component() {
   // État local de la modale initialisé à false
   const [showModal, setShowModal] = useState(false);
 
+  // Fonction appelée au click sur le bouton .showModale qui initialise l'état de la modale à true
   const functionToShowModal = () => {
     setShowModal(true); // On affiche la modale
   };
 
-  // On initialise l'état de la modale à false
+  // Fonction appelée au click sur le bouton .close qui initialise l'état de la modale à false
   const closeModal = () => {
     setShowModal(false);
   };  
 
   return(
-    <button onClick={functionToShowModal}>Save</button> // Le bouton qui va afficher la modale au click
+    <button onClick={functionToShowModal} className="showModale">Bouton pour afficher la modale</button> // Le bouton qui va afficher la modale au click
 
     // La modale avec les props
     <Modal
-      show={showModal} // donner précisions sur les props (obligatoire ou pas / booléen ...)
-      handleClose={closeModal} 
-      txt={<span>*Texte à générer*</span>} 
+      show={showModal} // prop obligatoire qui permet de définir l'état de la modale à false
+      handleClose={closeModal} // prop obligatoire qui permet de fermer la modale
+      content={<span>Texte à générer</span>} // prop qui permet de définir le texte à afficher dans la modale
     />
   ); 
 };

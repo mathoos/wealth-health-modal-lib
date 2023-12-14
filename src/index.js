@@ -9,7 +9,7 @@ const Modal = ({ show, handleClose, content }) => {
   return (
     <div className={styles.modal} data-testid='modal'>
       <div className={styles.modal_content}>
-        <div
+        <button
           className={styles.close}
           data-testid='close-button'
           onClick={handleClose}
