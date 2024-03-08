@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styles from './index.css'
 
 const Modal = ({ show, handleClose, content }) => {
@@ -19,12 +18,6 @@ const Modal = ({ show, handleClose, content }) => {
       </div>
     </div>
   )
-}
-
-Modal.propTypes = {
-  show: PropTypes.bool.isRequired,
-  handleClose: PropTypes.func.isRequired,
-  content: PropTypes.string.isRequired
 }
 
 export default Modal

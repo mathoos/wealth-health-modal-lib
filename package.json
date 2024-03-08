@@ -1,6 +1,6 @@
 {
   "name": "wealth-health-modal-lib",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Modale qui apparaît avec un texte personnalisé au click sur un bouton",
   "author": "mathoos",
   "license": "MIT",
@@ -58,6 +58,7 @@
     "dist"
   ],
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "prop-types": "^15.8.1"
   }
 }
